@@ -1,0 +1,259 @@
+.project-details-bg {
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+    min-width: 330px;
+    background-color: #131e2a;
+}
+
+a {
+    color: white;
+    width: 150px;
+    margin: 0;
+}
+
+a:hover {
+    color:#35df90;
+}
+
+.menu-element-container:hover {
+    background-color: #595959;
+}
+
+.back-btn-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 15px 0 0 35px;
+    z-index: 51;
+
+    font-size: 28px;
+    cursor: pointer;
+}
+.back-btn-container:hover {
+    border-bottom: 1px solid white;
+}
+
+.title-header {
+    text-align: left;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+
+.project-details-container {
+    position: relative;
+    width: 100vw;
+    max-width: 1140px;
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+
+    margin: auto;
+
+    padding: 150px 0 100px 0;
+
+    color: #FFF;
+    text-align: center;
+}
+
+.project-txt-container-parent {
+    position: sticky;
+    top: 150px;
+
+    width: 60%;
+    height: fit-content;
+
+    vertical-align: top;
+    display: inline-block;
+}
+
+.project-details-images-container {
+    width: 40%;
+    height: auto;
+    display: inline-block;
+}
+
+.project-title {
+    margin-top: 45px;
+    font-size: 42px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.device-title {
+    text-align: center;
+    font-size: 28px;
+
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+     -moz-user-select: none;
+     -o-user-select: none;
+     user-select: none;
+}
+
+
+.project-description {
+    margin-top: 35px;
+
+    font-size: 16px;
+
+    text-align: left;
+    
+    color: #a5b4c3;
+
+    padding: 25px;
+
+    background-color: #213246;
+    box-shadow: 0 10px 30px -15px rgb(0 11 27 / 90%);
+    border-radius: 4px;
+
+    margin-right: 50px;
+}
+.project-description::-webkit-scrollbar { 
+    display: none;
+}
+
+.screens-container {
+    width: 100%;
+    height: auto;
+
+    margin-top: 25px;
+
+}
+.project-details-pages-box {
+    margin-bottom: 75px;
+}
+
+.monitor-box {
+    height: fit-content;
+    width: 100%;
+}
+
+.monitor-mockup {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+
+    padding: 10px 10px 50px 10px;
+
+    margin: 50px 0 75px 0;
+    background-color: #213246;
+    box-shadow: 0 10px 30px -15px rgb(0 11 27 / 90%);
+    border-radius: 4px;
+}
+.monitor-mockup>img {
+    width: 100%;
+    height: auto;
+}
+
+.phone-mockup {
+    position: relative;
+    width: fit-content;
+    height: auto;
+
+    padding: 10px 10px 50px 10px;
+    margin: 50px auto 75px auto;
+
+    background-color: #213246;
+    box-shadow: 0 10px 30px -15px rgb(0 11 27 / 90%);
+    border-radius: 4px;
+}
+.phone-mockup>img {
+    width: 100%;
+    height: auto;
+}
+
+.project-details-page {
+    margin-top: 25px;
+    width: fit-content;
+}
+.project-details-page:hover {
+    cursor: pointer;
+    color: #35df90;
+}
+
+.page-icon {
+    display: inline-block;
+    height: 32px;
+}
+.page-icon>svg {
+    height: 100%;
+    width: auto;
+}
+.page-name {
+    display: inline-block;
+    margin-left: 10px;
+    font-weight: 300;
+}
+
+
+
+.project-details-loading-screen {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+
+    top: 0;
+    left: 0;
+
+    z-index: 2000;
+
+    background-color: rgb(19, 30, 42);
+    transition: all 0.2s;
+}
+
+.project-loading-centerbox {
+    position: absolute;
+    width: auto;
+    height: auto;
+
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.project-loading-centerbox>div>canvas {
+    transition: all 0.3s;
+}
+
+
+
+
+
+
+@media (max-width:1200px) { 
+    .project-txt-container-parent {
+        width: 40%;
+    }
+    .project-details-container {
+        padding: 150px 50px 0 50px;
+    }
+
+}
+
+
+@media (max-width:950px) { 
+    .project-details-images-container {
+        width: 100%;
+    }
+    .project-txt-container-parent {
+        width: 100%;
+        margin-bottom: 50px;
+        position: relative;
+        top: 0;
+    }
+    .project-description {
+        margin-right: 0;
+    }
+    
+}
+
+@media (max-width:500px) { 
+    .project-details-container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+}

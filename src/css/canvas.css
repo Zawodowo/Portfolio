@@ -1,0 +1,159 @@
+.canvas-bg {
+    position: absolute;
+    max-width: 1140px;
+    width: 100vw;
+    height: calc(100vh - 125px);
+    max-height: calc(1140px - 125px);
+
+    margin-top: 100px;
+    margin-bottom: 25px;
+
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.canvas-frame-right-up {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 100px;
+    height: 50px;
+
+    border-right: 4px solid white;
+    border-top: 4px solid white;
+    border-radius: 2px;
+    transition: all 0.2s;
+
+}
+.canvas-frame-right-up-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 100px;
+    height: 50px;
+
+    border-right: 4px solid white;
+    border-top: 4px solid white;
+    border-radius: 2px;
+
+    opacity: 0.1;
+    transition: all 0.2s;
+}
+
+.canvas-frame-left-down {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100px;
+    height: 50px;
+
+    border-left: 4px solid white;
+    border-bottom: 4px solid white;
+    border-radius: 2px;
+    transition: all 0.2s;
+    
+}
+.canvas-frame-left-down-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100px;
+    height: 50px;
+
+    border-left: 4px solid white;
+    border-bottom: 4px solid white;
+    border-radius: 2px;
+
+    opacity: 0.1;
+    transition: all 0.2s;
+}
+
+.canvas-icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    transition: all 0.2s;
+}
+
+.canvas-icon>svg {
+    width: 100%;
+    height: auto;
+    color:#1eb972;
+}
+
+.canvas-icon>svg:hover {
+    color: #35df90;
+}
+
+
+.canvas-bg-big-icon {
+    width: 600px;
+    height: auto;
+    position: absolute;
+
+    top: 50%;
+    left: 80px;
+    transform: translateY(-50%) rotate(0deg);
+
+    color:#1eb972;
+    opacity: 0.05;
+
+    transition: all 0.2s;
+}
+.canvas-bg-big-icon>svg {
+    width: 100%;
+    height: auto;
+}
+
+
+.canvas-code-start {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#canvas-start-code, #canvas-end-code {
+    font-family: 'Courier New', monospace;
+    font-size: 21px;
+    font-weight: 100;
+
+    display: inline-block;
+    color: #1eb972;
+
+    border-right: 3px solid #7beab8;
+    animation: cursor 1s step-end infinite;
+}
+
+
+.canvas-code-end {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+@keyframes cursor {
+    from, to { border-color: transparent; }
+    50% { border-color: #7beab8; }
+}
+
+
+
+@media (max-width:800px) { 
+    .canvas-bg {
+        width: calc(100vw - 60px);
+        height: calc(93vh - 125px);
+    }
+    .canvas-bg-big-icon {
+        width: 200px;
+        top: 30%;
+    }
+
+    .canvas-code-start {
+        left: 10px;
+    }
+    .canvas-code-end {
+        right: 10px;
+    }
+}

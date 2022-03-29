@@ -1,0 +1,342 @@
+.contact-container {
+    position: relative;
+    z-index: 25;
+
+    padding-top: 100px;
+
+    
+    width: 100%;
+    max-width: 1140px;
+
+    margin: auto;
+}
+.contact-container-bg {
+    position: relative;
+    padding: 0 150px 100px 150px;
+}
+
+
+.contact-title-container {
+    width: calc(100% - 10px);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.contact-title-header {
+    font-size: 42px;
+    font-weight: 700;
+
+    margin-bottom: 100px;
+
+    padding: 0;
+
+    color: white;
+    text-align: center;
+}
+
+.contact-content {
+    width: fit-content;
+    height: auto;
+    margin: auto;
+}
+
+
+#copy {
+    cursor: url('copy.png'), auto;
+}
+
+
+.contact-card {
+    position: relative;
+    width: 550px;
+    height: fit-content;
+
+    padding: 25px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #213246;
+    box-shadow: 0 10px 30px -15px rgb(0 11 27 / 90%);
+    border-radius: 4px;
+
+}
+
+.custom-label {
+    font-size: 24px;
+
+    text-align: left;
+}
+
+.email-row {
+    width: 100%;
+}
+
+
+.email-input {
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+
+    color: #a5b4c3;
+
+    background-color: #141e2a;
+    border: 1px solid #141e2a;
+
+
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.message-row {
+    margin-top: 25px;
+}
+.message-input {
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+
+    resize: none;
+
+    color: #a5b4c3;
+
+    background-color: #141e2a;
+    border: 1px solid #141e2a;
+
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.submit-row {
+    position: relative;
+    width: 100%;
+    padding-top: 20px;
+}
+.submit-button {
+    font-size: 18px;
+    color: #1eb972;
+
+    background-color: transparent;
+
+    margin-left:auto;
+    margin-right:auto;
+
+    padding: 0.75rem 1rem;
+    width: auto;
+    outline: none;
+
+    text-decoration: none;
+    border: #1eb972 1px solid;
+    border-radius: 4px;
+    display:block;
+}
+
+.submit-button:hover {
+    background-color: rgb(24, 143, 88, 0.1);
+    
+}
+
+
+.form-mail {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+
+/* CURTAINS PART */
+.contact-curtain {
+    transition: all 0.5s;
+}
+.email-curtain {
+    background-color: #1eb972;
+    position: absolute;
+    height: 42px;
+    width: 0px; /* 556px */
+
+    top: 25px;
+    left: 25px;
+
+    border-radius: 4px;
+
+    z-index: 20;
+}
+
+.message-curtain {
+    background-color: #1eb972;
+    position: absolute;
+    height: 258px;
+    width: 0px; /* 556px */
+
+    top: 92px;
+    left: 25px;
+
+    border-radius: 4px;
+
+    z-index: 20;
+}
+
+.submit-curtain {
+    background-color: #1eb972;
+    position: absolute;
+    height: 55px;
+    width: 0px; /* 135px */
+
+    top: 375px;
+    left: 208px;
+
+    border-radius: 4px;
+
+    z-index: 20;
+}
+
+.text-curtain {
+    position: absolute;
+    margin: auto;
+    text-align: center;
+    font-size: 24px;
+
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+
+    z-index: 10;
+
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+.copied-pop {
+    position: absolute;
+    width: 65px;
+    height: 22px;
+
+    background-color: #cfd2da;
+    color: black;
+
+
+    left: 63px;
+    top: 21px;
+    padding: 1px 0 0 6px;
+    border-radius: 5px;
+    font-size: 14px;
+
+    opacity: 0;
+    transition: top 0.5s, opacity 0.2s;
+}
+
+
+
+
+
+.bg-p5-bottom-container {
+    height: calc(100vh + 200px) !important;
+    overflow: hidden;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: #131e2a;
+
+    z-index: 3;
+}
+
+.bg-p5-bottom-inside {
+    width: fit-content;
+    height: fit-content;
+}
+.bg-p5-bottom-inside>div>canvas {
+    opacity: 0.2
+}
+
+
+
+
+
+@media (max-width:960px) { 
+    .contact-content {
+        position: relative;
+        padding: 0;
+    }
+
+    .contact-card {
+        position: relative;
+        width: 320px;
+        display: block;
+        margin: auto;
+    }
+
+    .email-row {
+        margin-top: 0;
+    }
+
+    .submit-curtain {
+        left: 92px;
+    }
+
+    .text-curtain {
+        font-size: 16px;
+    }
+
+
+
+}
+
+@media (max-width:650px) { 
+    .contact-container-bg {
+        padding: 0 5px 100px 5px
+    }
+}
+
+
+
+/* BOUNCE */
+.bounce {
+    outline: 0;
+    border-color: red;
+    animation-name: bounce;
+    animation-duration: .5s;
+    animation-delay: 0.25s;
+  }
+  
+  /* This approximates the ease-in-out-bounce animation from easings.net, which would require a plug-in to use*/
+  @keyframes bounce {
+    0% {
+      transform: translateX(0px);
+      timing-function: ease-in;
+    }
+    37% {
+      transform: translateX(5px);
+      timing-function: ease-out;
+    }
+    55% {
+      transform: translateX(-5px);
+      timing-function: ease-in;
+    }
+    73% {
+      transform: translateX(4px);
+      timing-function: ease-out;
+    }
+    82% {
+      transform: translateX(-4px);
+      timing-function: ease-in;
+    }
+    91% {
+      transform: translateX(2px);
+      timing-function: ease-out;
+    }
+    96% {
+      transform: translateX(-2px);
+      timing-function: ease-in;
+    }
+    100% {
+      transform: translateX(0px);
+      timing-function: ease-in;
+    }
+  }
+  
