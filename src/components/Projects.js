@@ -61,7 +61,7 @@ function Projects(props) {
             number: 3,
             title: "Portfolio",
             smallDescription: "Strona na której jesteś.",
-            description: "<p>Portfolio zostało napisane przy użyciu biblioteki js - React. Przy tworzeniu niektórych animacji na stronie korzystałem z biblioteki p5js.</p>",
+            description: "<span>Portfolio zostało napisane przy użyciu biblioteki js - React. Przy tworzeniu niektórych animacji na stronie korzystałem z biblioteki p5js.</span>",
             technologies: ["react"],
             mini_img: "https://astankiewicz.netlify.app/images/PROJECT_PORTFOLIO/0.jpg",
             page_address: "https://astankiewicz.netlify.app/",
@@ -80,6 +80,23 @@ function Projects(props) {
         },
         {
             number: 4,
+            title: "Visual of sorting algorithms",
+            smallDescription: "Wizualna reprezentacja różnych algorytmów sortowania.",
+            description: "<p>Strona, która pokazuje w jaki sposób poszczególne algorytmy sortują tablice liczb.</p>" +
+                         "<span>Użytkownik może wybrac z jakiego zbioru i ile liczb ma zostać wylosowanych, a nastepnie typ algorytmu oraz prędkość kroków.</span>",
+            technologies: ["react"],
+            mini_img: "https://astankiewicz.netlify.app/images/PROJECT_VISUAL/0.jpg",
+            page_address: "https://v-sorting.netlify.app/",
+            github_address: "https://github.com/Zawodowo/sorting",
+            display_devices: {
+                computer_images: ["https://astankiewicz.netlify.app/images/PROJECT_VISUAL/0.jpg",
+                                    "https://astankiewicz.netlify.app/images/PROJECT_VISUAL/1.jpg",
+                                    "https://astankiewicz.netlify.app/images/PROJECT_VISUAL/2.jpg"]
+            },
+            display_headers: ['Strona']
+        },
+        {
+            number: 5,
             title: "Barcode Scanner",
             smallDescription: "Aplikacja, która pomaga w obsłudze i zmianie danych w bazie danych dzięki skanowaniu kodu kreskowego.",
             description: "<p>Użytkownik może zeskanować kod kreskowy produktu, w odpowiedzi dostaje informacje o tym produkcie, zawarte w bazie danych.</p>" +

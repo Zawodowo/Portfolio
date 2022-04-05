@@ -10,7 +10,7 @@ function Canvas(props) {
     const position = useMousePosition();
 
     const codeTexts = ["<code>", "<html>", "<section>", "<h1>", "<span>", "<form>", "<img>", "<option>", "<textarea>"];
-    const codeEndTexts = ["</code>", "</html>", "</section>", "</h1>", "</span>", "</form>", "</img>", "</option>", "</textarea>"];
+    const codeEndTexts = ["</code>", "</html>", "</section>``", "</h1>", "</span>", "</form>", "</img>", "</option>", "</textarea>"];
 
     const [beforeTime, setBeforeTime] = useState();
 
@@ -22,9 +22,19 @@ function Canvas(props) {
         for(var i=0; i<icons.length; i++) {
             var icon = icons[i];
 
-            icon.style.left = String(getRand(30, parentWidth - 30) + "px");
-            icon.style.top = String(getRand(30, parentHeight - 30) + "px");
-            icon.style.width = getRand(20, 20 + parentWidth/40) + "px"
+            if(window.innerWidth < 600) { //MOBILE ICON POSITIONS
+                icon.style.left = String(20 + i*((parentWidth - 15)/9)) + "px";
+                icon.style.top = String(parentHeight * (2/3))+ "px";
+                icon.style.width = "20px"
+                if(window.innerWidth < 360) {
+
+                }
+            } else {
+                icon.style.left = String(getRand(30, parentWidth - 30) + "px");
+                icon.style.top = String(getRand(30, parentHeight - 30) + "px");
+                icon.style.width = getRand(20, 20 + parentWidth/40) + "px"
+            }
+            
         }
 
         const d = new Date();
@@ -44,6 +54,9 @@ function Canvas(props) {
 
 
     useEffect(() => {
+        if(window.innerWidth<600) {
+            return;
+        }
         const d = new Date();
         if(d.getTime() - beforeTime < 50) {
             return;

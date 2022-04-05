@@ -80,14 +80,6 @@ function MainPage() {
 
     return (
         <div className="parent">
-            {/*
-            <div className="bg-p5-container">
-                <div className="bg-p5-inside">
-                    <ReactP5Wrapper sketch={sketch}/>
-                </div>
-            </div>
-            */}
-
             <MenuBar pageType="main" scrollY={scrollY} />
 
             <div className="front-page" id="front-page">
