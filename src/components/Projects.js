@@ -118,6 +118,14 @@ function Projects(props) {
     const mini_projects = [
         {
             number: 1,
+            title: "Snake game",
+            smallDescription: "Prosta gra Snake napisana w JavaScript.",
+            technologies: ["js"],
+            github_link: "https://github.com/Zawodowo/snake",
+            page_link: "https://snakegame-as.netlify.app/"
+        },
+        {
+            number: 2,
             title: "Animacja matrix",
             smallDescription: "Animacja inspirowana matrixem. Napisana przy użyciu biblioteki p5js.",
             technologies: ["js"],
@@ -125,7 +133,15 @@ function Projects(props) {
             page_link: "https://astankiewicz.netlify.app/errorshowpage"
         },
         {
-            number: 2,
+            number: 3,
+            title: "Web scrapper",
+            smallDescription: "Przykład web scrappera, dzięki któremu pobrane i zapisane do pliku zostają produkty z danej strony (ich nazwa, link, cena, producent itp.).",
+            technologies: ["python"],
+            github_link: "https://github.com/Zawodowo/WebScrapper",
+            page_link: ""
+        },
+        {
+            number: 5,
             title: "Twitch clips downlader",
             smallDescription: "Skrypt, który pobiera najpopularniejsze clipy ze streamów, ze strony twitch.tv. Użytkownik może wybrać kanały, z których mają być pobierane clipy. Dodatkowo zapisywane do pliku tekstowego są tytuły i inne dane z clipu.",
             technologies: ["python"],
@@ -133,21 +149,13 @@ function Projects(props) {
             page_link: ""
         },
         {
-            number: 3,
+            number: 4,
             title: "Top clips movie maker",
             smallDescription: "Skrypt, który automatycznie skleja najpopularniejsze clipy w cały filmik. Dodatkowo dodawane są efekty przejścia, tytuł i nazwa streamera w odpowiednich momentach filmu. Wygenerowany plik tekstowy zawiera opis filmu (wszystkie dane, timestampy, adresy URL do clipów).",
             technologies: ["python"],
             github_link: "https://github.com/Zawodowo/top_clips_movie",
             page_link: ""
-        },
-        {
-            number: 4,
-            title: "Web scrapper",
-            smallDescription: "Przykład web scrappera, dzięki któremu pobrane i zapisane do pliku zostają produkty z danej strony (ich nazwa, link, cena, producent itp.).",
-            technologies: ["python"],
-            github_link: "https://github.com/Zawodowo/WebScrapper",
-            page_link: ""
-        },
+        }
     ]
 
     return (
