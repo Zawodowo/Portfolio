@@ -65,7 +65,7 @@ function Projects(props) {
             technologies: ["react"],
             mini_img: "https://astankiewicz.netlify.app/images/PROJECT_PORTFOLIO/0.jpg",
             page_address: "https://astankiewicz.netlify.app/",
-            github_address: "https://github.com/Zawodowo/Portfolio",
+            github_address: "https://github.com/amadeuszstankiewicz/Portfolio",
             display_devices: {
                 computer_images: [
                     "https://astankiewicz.netlify.app/images/PROJECT_PORTFOLIO/0.jpg",
@@ -87,7 +87,7 @@ function Projects(props) {
             technologies: ["react"],
             mini_img: "https://astankiewicz.netlify.app/images/PROJECT_VISUAL/0.jpg",
             page_address: "https://v-sorting.netlify.app/",
-            github_address: "https://github.com/Zawodowo/sorting",
+            github_address: "https://github.com/amadeuszstankiewicz/sorting",
             display_devices: {
                 computer_images: ["https://astankiewicz.netlify.app/images/PROJECT_VISUAL/0.jpg",
                                     "https://astankiewicz.netlify.app/images/PROJECT_VISUAL/1.jpg",
@@ -121,7 +121,7 @@ function Projects(props) {
             title: "Snake game",
             smallDescription: "Prosta gra Snake napisana w JavaScript.",
             technologies: ["js"],
-            github_link: "https://github.com/Zawodowo/snake",
+            github_link: "https://github.com/amadeuszstankiewicz/snake",
             page_link: "https://snakegame-as.netlify.app/"
         },
         {
@@ -129,7 +129,7 @@ function Projects(props) {
             title: "Animacja matrix",
             smallDescription: "Animacja inspirowana matrixem. Napisana przy użyciu biblioteki p5js.",
             technologies: ["js"],
-            github_link: "https://github.com/Zawodowo/matrix_animation",
+            github_link: "https://github.com/amadeuszstankiewicz/matrix_animation",
             page_link: "https://astankiewicz.netlify.app/errorshowpage"
         },
         {
@@ -137,7 +137,7 @@ function Projects(props) {
             title: "Web scrapper",
             smallDescription: "Przykład web scrappera, dzięki któremu pobrane i zapisane do pliku zostają produkty z danej strony (ich nazwa, link, cena, producent itp.).",
             technologies: ["python"],
-            github_link: "https://github.com/Zawodowo/WebScrapper",
+            github_link: "https://github.com/amadeuszstankiewicz/WebScrapper",
             page_link: ""
         },
         {
@@ -145,7 +145,7 @@ function Projects(props) {
             title: "Twitch clips downlader",
             smallDescription: "Skrypt, który pobiera najpopularniejsze clipy ze streamów, ze strony twitch.tv. Użytkownik może wybrać kanały, z których mają być pobierane clipy. Dodatkowo zapisywane do pliku tekstowego są tytuły i inne dane z clipu.",
             technologies: ["python"],
-            github_link: "https://github.com/Zawodowo/top_ttv_clips_downloader",
+            github_link: "https://github.com/amadeuszstankiewicz/top_ttv_clips_downloader",
             page_link: ""
         },
         {
@@ -153,7 +153,7 @@ function Projects(props) {
             title: "Top clips movie maker",
             smallDescription: "Skrypt, który automatycznie skleja najpopularniejsze clipy w cały filmik. Dodatkowo dodawane są efekty przejścia, tytuł i nazwa streamera w odpowiednich momentach filmu. Wygenerowany plik tekstowy zawiera opis filmu (wszystkie dane, timestampy, adresy URL do clipów).",
             technologies: ["python"],
-            github_link: "https://github.com/Zawodowo/top_clips_movie",
+            github_link: "https://github.com/amadeuszstankiewicz/top_clips_movie",
             page_link: ""
         }
     ]

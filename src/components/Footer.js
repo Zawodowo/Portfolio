@@ -37,7 +37,7 @@ function Footer() {
         <div className="footer-container">
             <div className="footer-socials-box">
                 <div className="footer-socials-grid">
-                    <a href="https://github.com/zawodowo" target="_blank">
+                    <a href="https://github.com/amadeuszstankiewicz" target="_blank">
                         <div className="social-bubble">
                             <AiOutlineGithub />
                         </div>
